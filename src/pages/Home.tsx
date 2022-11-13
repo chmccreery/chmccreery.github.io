@@ -1,4 +1,4 @@
-import { Text, Grid, Image, Space, Anchor, MediaQuery, Container } from "@mantine/core";
+import { Text, Grid, Image, Space, Anchor, MediaQuery } from "@mantine/core";
 import fontainebleau from "../media/profile.jpeg"
 import strasbird from "../media/strasbird.jpeg"
 

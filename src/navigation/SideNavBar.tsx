@@ -1,7 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faFeatherPointed, faHouse, faMusic, faPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Group, Navbar, Text, ThemeIcon, UnstyledButton } from "@mantine/core";
+import { Group, MediaQuery, Navbar, Text, ThemeIcon, UnstyledButton } from "@mantine/core";
 import { Link } from "react-router-dom";
 
 interface NavbarProps {
@@ -29,7 +29,9 @@ function NavbarItem ({text, icon, route}: NavbarProps) {
         <ThemeIcon variant="gradient" gradient={{from: 'blue', to: 'green', deg: 135 }}>
           <FontAwesomeIcon icon={icon}/>
         </ThemeIcon>
-        <Text>{text}</Text>
+        <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
+          <Text>{text}</Text>
+        </MediaQuery>
       </Group>
     </UnstyledButton>
   )
@@ -37,7 +39,7 @@ function NavbarItem ({text, icon, route}: NavbarProps) {
 
 export default function SideNavBar() {
   return (
-    <Navbar width={{ base: 200 }} height={500} p="xs">
+    <Navbar width={{ base: 64, sm: 180, md: 180, lg: 200, xl: 260 }} p="xs">
       <NavbarItem text="Home" icon={faHouse} route="/"/>
       <NavbarItem text="Travel" icon={faPlane} route="/travel"/>
       <NavbarItem text="Music" icon={faMusic} route="/music"/>

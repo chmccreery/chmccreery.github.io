@@ -8,7 +8,7 @@ import { ActionIcon, Group, Header, Title, useMantineColorScheme } from "@mantin
   return (
     <Header height={60} p="sm">
       <Group position="apart">
-        <Title size="h3">Clara McCreery</Title>
+        <Title size="h3" pl="xs">Clara McCreery</Title>
         <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
           {colorScheme === 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </ActionIcon>

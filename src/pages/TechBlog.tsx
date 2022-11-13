@@ -16,7 +16,7 @@ export function TechBlog() {
           thoughts, or just to document how my opinions are evolving with time.
         </Text>
         <Text>
-          When I am not riddled with imposter syndrome and self-doubt, I also sometimes hope that
+          When I am not riddled with imposter syndrome and self-doubt, I also hope that
           someone else might benefit from reading about my own journey into tech and, more
           recently, into management.
         </Text>

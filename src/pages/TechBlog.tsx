@@ -17,7 +17,7 @@ export function TechBlog() {
         </Text>
         <Text>
           When I am not riddled with imposter syndrome and self-doubt, I also hope that
-          someone else might benefit from reading about my own journey into tech and, more
+          someone else will benefit from reading about my own journey into tech and, more
           recently, into management.
         </Text>
         <Text>

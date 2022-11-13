@@ -1,16 +1,19 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faFeatherPointed, faHouse, faMusic } from "@fortawesome/free-solid-svg-icons";
+import { faFeatherPointed, faHouse, faMusic, faPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Group, Navbar, Text, ThemeIcon, UnstyledButton } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   text: string;
   icon: IconProp;
+  route: string;
 }
 
-function NavbarItem ({text, icon}: NavbarProps) {
+function NavbarItem ({text, icon, route}: NavbarProps) {
+  
   return (
-    <UnstyledButton onClick={() => {}}
+    <UnstyledButton component={Link} to={route}
       sx={(theme) => ({
         padding: theme.spacing.xs,
         borderRadius: theme.radius.sm,
@@ -35,10 +38,10 @@ function NavbarItem ({text, icon}: NavbarProps) {
 export default function SideNavBar() {
   return (
     <Navbar width={{ base: 200 }} height={500} p="xs">
-      <NavbarItem text="Home" icon={faHouse}/>
-      <NavbarItem text="Travel" icon={faFeatherPointed}/>
-      <NavbarItem text="Music" icon={faMusic}/>
-      <NavbarItem text="Tech Blog" icon={faFeatherPointed}/>
+      <NavbarItem text="Home" icon={faHouse} route="/"/>
+      <NavbarItem text="Travel" icon={faPlane} route="/travel"/>
+      <NavbarItem text="Music" icon={faMusic} route="/music"/>
+      <NavbarItem text="Tech Blog" icon={faFeatherPointed} route="/tech-blog"/>
     </Navbar>
   )
 }

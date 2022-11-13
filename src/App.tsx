@@ -1,4 +1,4 @@
-import { AppShell, MantineProvider } from '@mantine/core';
+import { AppShell, ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import { MainHeader } from './navigation/MainHeader';
@@ -7,10 +7,18 @@ import { HomePage } from './pages/Home';
 import { TravelPage } from './pages/Travel';
 import { MusicPage } from './pages/Music';
 import { TechBlog } from './pages/TechBlog';
+import { useState } from 'react';
+import { useColorScheme } from '@mantine/hooks';
 
 export default function App() {
+  const preferredColorScheme = useColorScheme();
+  const [colorScheme, setColorScheme] = useState<ColorScheme>(preferredColorScheme);
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+
   return (
-    <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
+    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+    <MantineProvider theme={{ colorScheme}} withGlobalStyles withNormalizeCSS>
       <BrowserRouter>
         <AppShell
           padding="md"
@@ -27,5 +35,6 @@ export default function App() {
         </AppShell>
       </BrowserRouter>
     </MantineProvider>
+    </ColorSchemeProvider>
   );
 }

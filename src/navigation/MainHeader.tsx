@@ -1,9 +1,18 @@
-import { Header, Title } from "@mantine/core";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ActionIcon, Group, Header, Title, useMantineColorScheme } from "@mantine/core";
 
  export function MainHeader() {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+
   return (
     <Header height={60} p="sm">
-      <Title size="h3">Clara McCreery</Title>
+      <Group position="apart">
+        <Title size="h3">Clara McCreery</Title>
+        <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
+          {colorScheme === 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
+        </ActionIcon>
+      </Group>
     </Header>
   )
  }

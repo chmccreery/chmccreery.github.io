@@ -34,10 +34,11 @@ export function HomePage() {
         <Text>
           I loved many parts of this job (my team, the mission, the travel, real weekends, my team), 
           but I did not have the patience for lab work. I had done just enough computer science to appreciate
-          how much more efficient I could be if I programmed a computer to do the repetitive tasks instead of me,
-          so I decided to go back to school and learn more computer science. I took several online classes, and 
-          then started applying to graduate schools. Eventually, I decided to go back to Stanford, where I
-          still had friends from undergrad and the prospect of a TA-ship to pay for my master's&nbsp;degree.
+          how much more efficient my lab work could be if I programmed a computer to do the repetitive tasks 
+          in the lab for me.
+          So, I decided to go back to school and learn more computer science. I took several online classes, and 
+          then applied to graduate schools. Eventually, I decided to go back to Stanford, where I
+          had friends from undergrad and the prospect of a TA-ship to pay for my master's&nbsp;degree.
         </Text>
         <Space h={paragraphSpacing}/>
         <Text>
@@ -46,7 +47,7 @@ export function HomePage() {
           most likely to be applied to chemistry and biology - which were still near and dear to my heart. But, I 
           found that actually I much preferred the systems classes, including my work as a TA for CS 110, a class 
           about file systems, multi-processing, multi-threading, and more. So, I pivoted once again, and started 
-          looking for jobs in&nbsp;sofware.
+          looking for jobs in&nbsp;software.
         </Text>
         <Space h={paragraphSpacing}/>
         <Text>

@@ -66,7 +66,7 @@ export function TravelPage() {
     <>
       <Title size="lg" pb="md">Travel</Title>
       <Grid>
-        <Grid.Col span={4}>
+        <Grid.Col xs={12} md={4} order={2} orderMd={1}>
           <ScrollArea style={{ height: height*3/4 }}>
             <List
               spacing="xs"
@@ -82,8 +82,13 @@ export function TravelPage() {
             </List>
           </ScrollArea>
         </Grid.Col>
-        <Grid.Col span={8}>
-          {img && <Image height={height*3/4} src={img} />}
+        <Grid.Col xs={12} md={8} order={1} orderMd={2}>
+          {img && 
+            <Image 
+              height={height*7/10}
+              src={img}
+            />
+          }
         </Grid.Col>
       </Grid>
     </>

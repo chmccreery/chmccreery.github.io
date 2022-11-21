@@ -6,9 +6,10 @@ import SideNavBar from './navigation/SideNavBar';
 import { HomePage } from './pages/Home';
 import { TravelPage } from './pages/Travel';
 import { MusicPage } from './pages/Music';
-import { TechBlog } from './pages/TechBlog';
+import { TechBlog } from './pages/blog/TechBlog';
 import { useState } from 'react';
 import { useColorScheme } from '@mantine/hooks';
+import { WhyImWriting } from './pages/blog/WhyImWriting';
 
 export default function App() {
   const preferredColorScheme = useColorScheme();
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/travel" element={<TravelPage />} />
             <Route path="/music" element={<MusicPage />} />
             <Route path="/tech-blog" element={<TechBlog />} />
+            <Route path="/tech-blog/why-i-decided-to-write" element={<WhyImWriting />} />
           </Routes>
         </AppShell>
       </BrowserRouter>

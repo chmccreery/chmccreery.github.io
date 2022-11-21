@@ -9,6 +9,7 @@ import paris from "../media/paris.jpeg";
 import strasbourg from "../media/strasbourg.jpeg";
 import iceland from "../media/iceland.jpeg";
 import lucerne from "../media/lucerne.jpeg";
+import heidelberg from "../media/heidelberg.jpeg";
 
 interface CountryProps {
   name: string;
@@ -17,7 +18,7 @@ interface CountryProps {
 
 export function TravelPage() {
   const { height } = useViewportSize();
-  const [img, setImg] = useState<string>(perugia);
+  const [img, setImg] = useState<string>(heidelberg);
 
   function CountryVisited({name, img}: CountryProps) {  
     return (
@@ -57,7 +58,7 @@ export function TravelPage() {
     <CountryVisited name="2022: Lucerne, Switzerland" img={lucerne}/>,
     <CountryVisited name="2022: Paris, France" img={paris}/>,
     <CountryVisited name="2022: Perugia and Assisi, Italy" img={perugia}/>,
-    <CountryVisited name="2022: Heidelberg, Germany" />
+    <CountryVisited name="2022: Heidelberg, Germany" img={heidelberg}/>
   ];
 
   const countries_desc = countries.reverse();

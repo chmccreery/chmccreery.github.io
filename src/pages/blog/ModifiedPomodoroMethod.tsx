@@ -9,20 +9,18 @@ export function ModifiedPomodoroMethod(): JSX.Element {
       <BlogTitle>My Modified Pomodoro Method</BlogTitle>
       <Stack>
         <Text>
-          For those who don’t know, the Pomodoro Method is a popular technique
-          for enhancing productivity and improving time management skills. You
-          divide your work into 25-minute focused blocks of time called
-          “pomodoros” with 5-minute breaks in between, and you only give
-          yourself credit for a “pomodoro” if you achieve 25 minutes without
-          interruptions working on the task you planned to work on. It is
-          supposed to help you get a better sense of how long (i.e. how many
-          “pomodoros”) various tasks take and thus help with planning. It is
+          The Pomodoro Method is a popular technique for improving productivity and 
+          time management. You divide your work into 30-minute blocks of time called 
+          “pomodoros,” each of which ends with a 5 minute break. You only give yourself 
+          credit for a “pomodoro” if you achieve 25 minutes without interruptions 
+          working on the task you planned to work on. It is supposed to help you get a 
+          better sense of how long various tasks take and thus help with planning. It is
           also said to improve your focus if your mind wanders a lot or if you
-          are constantly being interrupted, and of course there are lots of
-          health benefits to forcing yourself to stand up every 25 minutes to
+          are constantly being interrupted. Of course, there are also lots of
+          health benefits to forcing yourself to stand up frequently to
           stretch, look at something other than a screen, and realize that
-          actually you are thirsty and need to use the bathroom and until now
-          you had no idea. This is a test.
+          you are thirsty and need to use the bathroom and until now
+          you had no idea.
         </Text>
         <Text>
           On the recommendation of a coworker who uses it religiously, I have

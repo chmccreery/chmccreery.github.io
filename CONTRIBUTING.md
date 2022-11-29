@@ -43,7 +43,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This repository uses gh-pages, and is live on https://chmccreery.github.io
 
-The command above will redeploy the website to that URL. 
+The command above will redeploy the website to that URL.
 
 ## Learn More
 

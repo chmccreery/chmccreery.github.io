@@ -1,11 +1,9 @@
-import { Title } from "@mantine/core";
-
+import { Title } from '@mantine/core';
+import React from 'react';
 interface Props {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
-export function Subtitle({children}: Props) {
-  return(
-    <Title size="h3">{children}</Title>
-  )
+export function Subtitle({ children }: Props): JSX.Element {
+  return <Title size="h4">{children}</Title>;
 }

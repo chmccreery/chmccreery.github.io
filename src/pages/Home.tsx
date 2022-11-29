@@ -1,10 +1,12 @@
-import { Text, Grid, Image, Space, Anchor, MediaQuery } from '@mantine/core';
-import fontainebleau from '../media/profile.jpeg';
-import strasbird from '../media/strasbird.jpeg';
+/* eslint-disable react/no-unescaped-entities */
+import { Text, Grid, Image, Space, Anchor, MediaQuery } from '@mantine/core'
+import fontainebleau from '../media/profile.jpeg'
+import strasbird from '../media/strasbird.jpeg'
+import React from 'react'
 
-const paragraphSpacing = 'md';
+const paragraphSpacing = 'md'
 
-export function HomePage() {
+export function HomePage (): JSX.Element {
   return (
     <Grid gutter="xl">
       <Grid.Col sm={12} lg={4}>
@@ -75,5 +77,5 @@ export function HomePage() {
         </Text>
       </Grid.Col>
     </Grid>
-  );
+  )
 }

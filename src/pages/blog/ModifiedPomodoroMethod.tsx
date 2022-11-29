@@ -1,9 +1,9 @@
-import { Container, Stack, Text } from '@mantine/core';
-import { Subtitle } from '../../components/SubTitle';
-import React from 'react';
-import { BlogTitle } from '../../components/BlogTitle';
+import { Container, Stack, Text } from '@mantine/core'
+import { Subtitle } from '../../components/SubTitle'
+import React from 'react'
+import { BlogTitle } from '../../components/BlogTitle'
 
-export function ModifiedPomodoroMethod(): JSX.Element {
+export function ModifiedPomodoroMethod (): JSX.Element {
   return (
     <Container>
       <BlogTitle>My Modified Pomodoro Method</BlogTitle>
@@ -138,5 +138,5 @@ export function ModifiedPomodoroMethod(): JSX.Element {
         </Text>
       </Stack>
     </Container>
-  );
+  )
 }

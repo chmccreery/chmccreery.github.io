@@ -2,7 +2,7 @@ import { Container, Stack, Text } from '@mantine/core'
 import React from 'react'
 import { BlogTitle } from '../../components/BlogTitle'
 
-export function WhyImWriting(): JSX.Element {
+export function WhyImWriting (): JSX.Element {
   return (
     <Container>
       <BlogTitle>Why I Decided to Write</BlogTitle>

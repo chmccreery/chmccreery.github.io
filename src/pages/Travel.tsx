@@ -1,39 +1,41 @@
-import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Anchor, Grid, Image, List, ScrollArea, Title } from '@mantine/core';
-import { useViewportSize } from '@mantine/hooks';
-import React, { useState } from 'react';
-import wingst from '../media/wingst.jpeg';
-import perugia from '../media/perugia.jpeg';
-import paris from '../media/paris.jpeg';
-import strasbourg from '../media/strasbourg.jpeg';
-import iceland from '../media/iceland.jpeg';
-import lucerne from '../media/lucerne.jpeg';
-import heidelberg from '../media/heidelberg.jpeg';
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Anchor, Grid, Image, List, ScrollArea, Title } from '@mantine/core'
+import { useViewportSize } from '@mantine/hooks'
+import React, { useState } from 'react'
+import wingst from '../media/wingst.jpeg'
+import perugia from '../media/perugia.jpeg'
+import paris from '../media/paris.jpeg'
+import strasbourg from '../media/strasbourg.jpeg'
+import iceland from '../media/iceland.jpeg'
+import lucerne from '../media/lucerne.jpeg'
+import heidelberg from '../media/heidelberg.jpeg'
 interface CountryProps {
-  name: string;
-  img?: string;
-  key: number;
+  name: string
+  img?: string
+  key: number
 }
 
-export function TravelPage(): JSX.Element {
-  const { height } = useViewportSize();
-  const [img, setImg] = useState<string>(heidelberg);
+export function TravelPage (): JSX.Element {
+  const { height } = useViewportSize()
+  const [img, setImg] = useState<string>(heidelberg)
 
-  function CountryVisited({
+  function CountryVisited ({
     name,
     img = undefined,
-    key,
+    key
   }: CountryProps): JSX.Element {
     return (
       <List.Item key={key}>
-        {img === undefined ? (
-          name
-        ) : (
+        {img === undefined
+          ? (
+              name
+            )
+          : (
           <Anchor onClick={() => setImg(img)}>{name}</Anchor>
-        )}
+            )}
       </List.Item>
-    );
+    )
   }
 
   const countries = [
@@ -70,10 +72,10 @@ export function TravelPage(): JSX.Element {
       key={1}
       name="2022: Heidelberg, Germany"
       img={heidelberg}
-    />,
-  ];
+    />
+  ]
 
-  const countriesDesc = countries.reverse();
+  const countriesDesc = countries.reverse()
 
   return (
     <>
@@ -87,19 +89,22 @@ export function TravelPage(): JSX.Element {
               spacing="xs"
               size="sm"
               withPadding
-              icon={<FontAwesomeIcon icon={faGlobeAmericas} />}>
+              icon={<FontAwesomeIcon icon={faGlobeAmericas} />}
+            >
               {countriesDesc.map((place, idx) => {
-                return place;
+                return place
               })}
             </List>
           </ScrollArea>
         </Grid.Col>
         <Grid.Col xs={12} md={8} order={1} orderMd={2}>
-          {img !== undefined ? (
+          {img !== undefined
+            ? (
             <Image height={(height * 7) / 10} src={img} />
-          ) : null}
+              )
+            : null}
         </Grid.Col>
       </Grid>
     </>
-  );
+  )
 }

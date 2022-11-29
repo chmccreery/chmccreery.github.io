@@ -1,16 +1,16 @@
-import React from 'react';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   ActionIcon,
   Group,
   Header,
   Title,
-  useMantineColorScheme,
-} from '@mantine/core';
+  useMantineColorScheme
+} from '@mantine/core'
 
-export function MainHeader(): JSX.Element {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+export function MainHeader (): JSX.Element {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme()
 
   return (
     <Header height={60} p="sm">
@@ -21,14 +21,17 @@ export function MainHeader(): JSX.Element {
         <ActionIcon
           variant="default"
           onClick={() => toggleColorScheme()}
-          size={30}>
-          {colorScheme === 'dark' ? (
+          size={30}
+        >
+          {colorScheme === 'dark'
+            ? (
             <FontAwesomeIcon icon={faSun} />
-          ) : (
+              )
+            : (
             <FontAwesomeIcon icon={faMoon} />
-          )}
+              )}
         </ActionIcon>
       </Group>
     </Header>
-  );
+  )
 }

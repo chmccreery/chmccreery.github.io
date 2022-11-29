@@ -1,9 +1,9 @@
-import React from 'react';
-import { AspectRatio, Space, Stack, Text, Title } from '@mantine/core';
-import { useViewportSize } from '@mantine/hooks';
+import React from 'react'
+import { AspectRatio, Space, Stack, Text, Title } from '@mantine/core'
+import { useViewportSize } from '@mantine/hooks'
 
-export function MusicPage(): JSX.Element {
-  const { width } = useViewportSize();
+export function MusicPage (): JSX.Element {
+  const { width } = useViewportSize()
 
   return (
     <>
@@ -21,7 +21,8 @@ export function MusicPage(): JSX.Element {
             frameBorder="0"
             allow="autoplay"
             title="Masters Recital"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/797556120&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/797556120&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
         </AspectRatio>
 
         <Space h="xl" />
@@ -35,7 +36,8 @@ export function MusicPage(): JSX.Element {
             frameBorder="0"
             allow="autoplay"
             title="The Streetlights"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/797624922&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/797624922&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
         </AspectRatio>
         <Space h="xl" />
         <Text>
@@ -49,9 +51,10 @@ export function MusicPage(): JSX.Element {
             title="Elgar Sonata"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
+            allowFullScreen
+          ></iframe>
         </AspectRatio>
       </Stack>
     </>
-  );
+  )
 }

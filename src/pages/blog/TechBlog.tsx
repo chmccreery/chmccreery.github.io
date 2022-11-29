@@ -1,7 +1,8 @@
-import { Anchor, Stack, Text, Title } from '@mantine/core';
-import { Link } from 'react-router-dom';
+import { Anchor, Stack, Text, Title } from '@mantine/core'
+import { Link } from 'react-router-dom'
+import React from 'react'
 
-export function TechBlog() {
+export function TechBlog (): JSX.Element {
   return (
     <>
       <Title size="lg" pb="md">
@@ -22,5 +23,5 @@ export function TechBlog() {
         </Text>
       </Stack>
     </>
-  );
+  )
 }

@@ -19,12 +19,19 @@ interface CountryProps {
 export function TravelPage() {
   const { height } = useViewportSize();
   const [img, setImg] = useState<string>(heidelberg);
+  const [imgName, setImgName] = useState<string>("Heidelberg Castle");
 
   function CountryVisited({name, img}: CountryProps) {  
     return (
       <List.Item>
         {img ? 
-        <Anchor onClick={() => setImg(img)}>
+        <Anchor onClick={() => 
+          {
+            setImg(img);
+            setImgName(name);
+          }
+        }
+        >
           {name}
         </Anchor> : 
         name }
@@ -88,6 +95,7 @@ export function TravelPage() {
             <Image 
               height={height*7/10}
               src={img}
+              alt={imgName}
             />
           }
         </Grid.Col>

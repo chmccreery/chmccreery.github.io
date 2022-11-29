@@ -5,7 +5,7 @@ import { BlogTitle } from '../../components/BlogTitle'
 export function WhyImWriting (): JSX.Element {
   return (
     <Container>
-      <BlogTitle>Why I Decided to Write</BlogTitle>
+      <BlogTitle>✍🏼 Why I Decided to Write ✍🏼</BlogTitle>
       <Stack>
         <Text>
           On my computer, I am slowly accumulating a proverbial pile of
@@ -43,12 +43,6 @@ export function WhyImWriting (): JSX.Element {
           say… the journey matters more than the destination? I am using this
           opportunity to appreciate the journey and put it on display for all to
           see.
-        </Text>
-        <Text>
-          As I embark on this adventure, I’d like to encourage you to please
-          send me any feedback you may have. I am always looking to learn and
-          improve. My email is chmccreery at gmail dot com. Thank you for
-          reading, and I hope you enjoy!
         </Text>
       </Stack>
     </Container>

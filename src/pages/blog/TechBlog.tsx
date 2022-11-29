@@ -10,6 +10,12 @@ export function TechBlog (): JSX.Element {
       </Title>
       <Stack pl="md">
         <Text>
+          I am very new to blogging! And to sharing my writing publicly. If something I've written
+          moves you or concerns you, please be generous with feedback - I am always looking to 
+          expand my horizons, learn, and improve. 
+          My email is chmccreery at gmail dot com. Thank you for reading, and I hope you enjoy!
+        </Text>
+        <Text>
           Nov 29, 2022:{' '}
           <Anchor component={Link} to="modified-pomodoro-method">
             My Modified Pomodoro Method

@@ -10,11 +10,11 @@ export function HomePage() {
       <Grid.Col sm={12} lg={4} >
         <Grid>
           <Grid.Col sm={6} lg={12}>
-            <Image src={fontainebleau}/>
+            <Image src={fontainebleau} alt="profile picture of me wearing a hat in Fontainebleau, France"/>
           </Grid.Col>
           <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
             <Grid.Col sm={6} lg={12}>
-              <Image src={strasbird}/>
+              <Image src={strasbird} alt="picture of me facing away from the camera taking a picture of a bird"/>
             </Grid.Col>
           </MediaQuery>
         </Grid>
@@ -60,7 +60,7 @@ export function HomePage() {
         <Text>
           Outside of work, I enjoy playing the violin and singing with my friends in&nbsp;
           <Anchor href="https://sites.google.com/view/backyardtheatersf/about?authuser=0">Backyard Theater</Anchor>, 
-          running, biking, the oxford comma, and&nbsp;triathlons.
+          all things communal living, running, biking, and&nbsp;triathlons.
         </Text>
       </Grid.Col>
     </Grid>

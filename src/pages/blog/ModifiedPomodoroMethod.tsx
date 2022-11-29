@@ -6,7 +6,7 @@ import {BlogTitle} from '../../components/BlogTitle'
 export function ModifiedPomodoroMethod(): JSX.Element {
   return (
     <Container>
-      <BlogTitle>My Modified Pomodoro Method</BlogTitle>
+      <BlogTitle>🍅 My Modified Pomodoro Method 🍅</BlogTitle>
       <Stack>
         <Text>
           The Pomodoro Method is a popular technique for improving productivity and 
